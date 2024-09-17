@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <!-- logo -->
+      <div class="logo">
+        <img src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" />
+        <p>Powered By <span>Finstreet</span></p>
+      </div>
+      <!-- buttons -->
+      <div class="header-buttons">
+        <div class="header-button">
+          <button
+            class="header-button-single"
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            INR
+            <svg
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              width="24"
+              height="24"
+            >
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="header-button">
+          <button
+            class="header-button-single"
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            BTC
+            <svg
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="header-button">
+          <button
+            class="header-button-single"
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+              padding: 10px;
+            "
+          >
+            BUY BTC
+          </button>
+        </div>
+      </div>
+      <!-- header-right -->
+      <div class="header-right">
+        <div class="progress-bar"><p>60</p></div>
+        <div class="telegram-button">
+          <button class="telegram">
+            <svg
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              style="margin-right: 10px"
+            >
+              <path
+                d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"
+              ></path></svg
+            >Connect Telegram
+          </button>
+        </div>
+        <div class="toggle-theme">
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="MuiSwitch-track">
+              <span class="MuiSwitch-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="belowHeader">
+      <div class="numbers" style="color: rgb(204, 204, 204); transition: 0.5s">
+        <div class="number">
+          <div class="topHeader"><h2>0.72%</h2></div>
+          <div class="subHeader"><h3>5 Mins</h3></div>
+        </div>
+        <div class="number">
+          <div class="topHeader"><h2>1.25%</h2></div>
+          <div class="subHeader"><h3>1 Hour</h3></div>
+        </div>
+        <div class="main" style="max-width: 40%; color: rgb(255, 255, 255)">
+          <div class="upperHeading"><h3>Best Price to Trade</h3></div>
+          <div
+            class="middle"
+            style="padding-bottom: 10px; color: rgb(12, 15, 72)"
+          >
+            <h2>₹ 40,20,649</h2>
+          </div>
+          <div class="lowerHeading">
+            <h3>Average BTC/INR net price including commission</h3>
+          </div>
+        </div>
+        <div class="number">
+          <div class="topHeader"><h2>8.6%</h2></div>
+          <div class="subHeader"><h3>1 Day</h3></div>
+        </div>
+        <div class="number">
+          <div class="topHeader"><h2>16.9%</h2></div>
+          <div class="subHeader"><h3>7 Days</h3></div>
+        </div>
+      </div>
+      <a href="https://finstreet.in/" target="_blank" rel="noreferrer"
+        ><img
+          src="https://hodlinfo.com/static/media/cryptonews.54869ee3.png"
+          alt="banner"
+          style="width: 100%; padding: 10px"
+      /></a>
+    </div>
+
+    <div class="platform-price">
+      <table class="platform-price-table">
+        <thead>
+          <tr>
+            <th>
+              <h4><span class="pointer">#</span></h4>
+            </th>
+            <th>
+              <h4><span class="pointer">Platform</span></h4>
+            </th>
+            <th>
+              <h4><span class="pointer">Last Traded Price</span></h4>
+            </th>
+            <th>
+              <h4><span class="pointer">Buy / Sell Price</span></h4>
+            </th>
+            <th>
+              <h4><span class="pointer">Difference</span></h4>
+            </th>
+            <th>
+              <h4><span class="pointer">Savings</span></h4>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>1</h4></td>
+            <td class="platform">
+              <a
+                href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&amp;utm_medium=affiliate&amp;utm_campaign=regnow-btn"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/WazirX.png"
+                  alt="WazirX"
+                  class="platform-image"
+                />
+                <h4>WazirX</h4></a
+              >
+            </td>
+            <td><h4>₹ 42,87,500</h4></td>
+            <td>
+              <h4><span>₹ 42,73,500</span> /<span> ₹ 42,74,399</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-neg">-8.99 %</h4></td>
+            <td class="difference"><h4 class="color-neg">▲₹ -899</h4></td>
+          </tr>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>2</h4></td>
+            <td class="platform">
+              <a
+                href="https://bitbns.com/trade/?utm_source=refID_35_2021-04-23&amp;utm_medium=referral_link&amp;utm_campaign=referral#/signup"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/Bitbns.png"
+                  alt="Bitbns"
+                  class="platform-image"
+                />
+                <h4>Bitbns</h4></a
+              >
+            </td>
+            <td><h4>₹ 42,38,947</h4></td>
+            <td>
+              <h4><span>₹ 42,30,992</span> /<span> ₹ 42,37,647</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-neg">-66.55 %</h4></td>
+            <td class="difference"><h4 class="color-neg">▲₹ -6,655</h4></td>
+          </tr>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>3</h4></td>
+            <td class="platform">
+              <a
+                href="https://hodlinfo.com/"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/Giotus.png"
+                  alt="Giotus"
+                  class="platform-image"
+                />
+                <h4>Giotus</h4></a
+              >
+            </td>
+            <td><h4>₹ 43,13,445</h4></td>
+            <td>
+              <h4><span>₹ 44,13,445</span> /<span> ₹ 44,83,900</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-neg">-704.55 %</h4></td>
+            <td class="difference"><h4 class="color-neg">▲₹ -70,455</h4></td>
+          </tr>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>4</h4></td>
+            <td class="platform">
+              <a
+                href="https://hodlinfo.com/"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/Colodax.png"
+                  alt="Colodax"
+                  class="platform-image"
+                />
+                <h4>Colodax</h4></a
+              >
+            </td>
+            <td><h4>₹ 25,83,138</h4></td>
+            <td>
+              <h4><span>₹ 25,75,167</span> /<span> ₹ 26,08,984</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-neg">-338.17 %</h4></td>
+            <td class="difference"><h4 class="color-neg">▲₹ -33,817</h4></td>
+          </tr>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>5</h4></td>
+            <td class="platform">
+              <a
+                href="https://hodlinfo.com/"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/Zebpay.png"
+                  alt="Zebpay"
+                  class="platform-image"
+                />
+                <h4>Zebpay</h4></a
+              >
+            </td>
+            <td><h4>₹ 43,10,000</h4></td>
+            <td>
+              <h4><span>₹ 43,10,000</span> /<span> ₹ 43,01,600</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-pos">84 %</h4></td>
+            <td class="difference"><h4 class="color-pos">▼₹ 8,400</h4></td>
+          </tr>
+          <tr
+            style="
+              background-color: rgb(46, 50, 65);
+              color: rgb(255, 255, 255);
+              transition: 0.5s;
+            "
+          >
+            <td><h4>6</h4></td>
+            <td class="platform">
+              <a
+                href="https://hodlinfo.com/"
+                target="_blank"
+                rel="noreferrer"
+                style="color: rgb(255, 255, 255); transition: 0.5s"
+                ><img
+                  src="./assets/CoinDCX.png"
+                  alt="CoinDCX"
+                  class="platform-image"
+                />
+                <h4>CoinDCX</h4></a
+              >
+            </td>
+            <td><h4>₹ 42,25,500</h4></td>
+            <td>
+              <h4><span>₹ 42,06,202</span> /<span> ₹ 42,26,752</span></h4>
+            </td>
+            <td class="difference"><h4 class="color-neg">-205.5 %</h4></td>
+            <td class="difference"><h4 class="color-neg">▲₹ -20,550</h4></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <div class="contents">
+        <div class="footer-text"><h5>Copyright © 2021</h5></div>
+        <div class="footer-text"><h5>Hodlinfo.com</h5></div>
+        <div class="footer-text footer-text-link">
+          <h5>
+            Developed By<a
+              href="https://www.quadbtech.com"
+              rel="noreferrer"
+              target="_blank"
+              >QuadBtech</a
+            >
+          </h5>
+        </div>
+        <div class="footer-text-pointer">
+          <h5>
+            <a href="mailto:support@hodlinfo.com" class="footer-text-link"
+              >Support</a
+            >
+          </h5>
+        </div>
+      </div>
+      <div class="footer-botton-back">
+        <button class="footer-button">Add hodlinfo to home screen</button>
+      </div>
+    </div>
+  </body>
+</html>
